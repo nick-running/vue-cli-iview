@@ -1,6 +1,6 @@
 # zj-prj
 
-> zj项目模板
+> 项目模板
 
 ## Build Setup
 
