@@ -11,12 +11,7 @@ export default new Router({
       path: '/',
       // name: 'Hello',
       component: generatingStandard,
-      meta: {title: '标准市场管理'}
-    },
-    {
-      path: '/generatingStandard',
-      // name: 'Hello',
-      component: generatingStandard
+      meta: {title: '市场管理'}
     }
   ]
 })
