@@ -13,22 +13,22 @@
           <el-col :span="4">
             <!--<h5>带 icon</h5>-->
             <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @select="handleSelect" @close="handleClose">
-              <template v-for="(menu, index) in sideMenu">
-                <template v-if="menu.children">
-                  <el-submenu :index="index+''">
-                    <template slot="title"><i class="el-icon-message"></i>{{menu.title}}</template>
-                    <el-menu-item-group>
-                      <!--<template slot="title">{{menu.title}}</template>-->
-                      <template v-for="(sub1, subIndex) in menu.children">
-                        <el-menu-item :index="sub1.url">{{sub1.title}}</el-menu-item>
-                      </template>
-                    </el-menu-item-group>
-                  </el-submenu>
-                </template>
-                <template v-else>
-                  <el-menu-item :index="menu.url"><i class="el-icon-menu"></i>{{menu.title}}</el-menu-item>
-                </template>
-              </template>
+              <!--<template v-for="(menu, index) in sideMenu">-->
+                <!--<template v-if="menu.children">-->
+                  <!--<el-submenu :index="index+''">-->
+                    <!--<template slot="title"><i class="el-icon-message"></i>{{menu.title}}</template>-->
+                    <!--<el-menu-item-group>-->
+                      <!--&lt;!&ndash;<template slot="title">{{menu.title}}</template>&ndash;&gt;-->
+                      <!--<template v-for="(sub1, subIndex) in menu.children">-->
+                        <!--<el-menu-item :index="sub1.url">{{sub1.title}}</el-menu-item>-->
+                      <!--</template>-->
+                    <!--</el-menu-item-group>-->
+                  <!--</el-submenu>-->
+                <!--</template>-->
+                <!--<template v-else>-->
+                  <!--<el-menu-item :index="menu.url"><i class="el-icon-menu"></i>{{menu.title}}</el-menu-item>-->
+                <!--</template>-->
+              <!--</template>-->
 
             </el-menu>
           </el-col>
@@ -62,31 +62,6 @@
           }
         },
         sideMenu: [
-          {
-            title: '标准管理',
-            children: [
-              {title: '题录管理', url: '/bz/1'},
-              {title: '订单管理', url: '/bz/2'},
-              {title: '公告管理', url: '/bz/3'},
-              {title: '标准更新记录', url: '/bz/4'},
-              {title: '生成标准(available)', url: '/generatingStandard'},
-              {title: '标准化知识(available)', url: '/sdKnowledge'},
-              {title: '搜索记录', url: '/bz/6'}
-            ]
-          },
-          {
-            title: '会员管理', url: '/vip'
-          },
-          {
-            title: '富文本数据', url: '/fwb'
-          },
-          {
-            title: '系统设置',
-            children: [
-              {title: '管理员管理', url: '/admin/1'},
-              {title: '菜单管理', url: '/admin/2'}
-            ]
-          }
         ]
       }
     },
