@@ -43,7 +43,7 @@
         <!--</div>-->
     </div>
     <div id="footer" class="footer">
-        <h3>质见后台管理系统</h3>
+        <h3>后台管理系统</h3>
     </div>
   </div>
 </template>
