@@ -59,21 +59,6 @@
             </li>
             </template>
 
-            <!--<li>-->
-              <!--<a class="nav-item " href="javascript:;"-->
-                 <!--style="background-image: url(/cu/cuicons/loadImage?iconNo=M3704019492602618); background-size:25px;">后台管理-->
-              <!--</a>-->
-              <!--<ul class="sub-menu">-->
-                <!--<li class="nav-item">-->
-                  <!--<a href="http://172.16.0.99:32804/qdwww/index.html#/" class="nav-link">-->
-                    <!--<span class="title">标准化知识管理</span>-->
-
-                  <!--</a>-->
-                  <!--<ul class="" dir="rtl">-->
-                  <!--</ul>-->
-                <!--</li>-->
-              <!--</ul>-->
-            <!--</li>-->
 
             <li>
               <a class="nav-item " href="javascript:;"
@@ -86,95 +71,8 @@
                     <span class="title">通用参数</span>
                     <img :src="arrowLeft">
                   </a>
-                  <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
-                    <ul class=" sub-menu  three-menu" dir="rtl" style="overflow: hidden; width: auto; height: auto;">
-                      <li class="nav-item">
-                        <a href="http://172.16.0.99:32804/qz/dictionarycategory/index.html" class="nav-link">
-                          <span class="title">字典管理</span>
-
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="slimScrollBar"
-                         style="background: rgb(51, 51, 51); width: 10px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; left: 1px;"></div>
-                    <div class="slimScrollRail"
-                         style="width: 10px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div>
-                  </div>
                 </li>
 
-                <!--<li class="nav-item">-->
-                  <!--<a href="javascript:;" class="nav-link nav-toggle">-->
-                    <!--<span class="title">组织机构</span>-->
-                    <!--<img :src="arrowLeft">-->
-                  <!--</a>-->
-                  <!--<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">-->
-                    <!--<ul class=" sub-menu  three-menu" dir="rtl" style="overflow: hidden; width: auto; height: auto;">-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/organization-management/organization-management-list.html"-->
-                           <!--class="nav-link">-->
-                          <!--<span class="title">机构管理</span>-->
-
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/role-management/role-management-list.html"-->
-                           <!--class="nav-link">-->
-                          <!--<span class="title">角色管理</span>-->
-
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/post-management/post-management-list.html"-->
-                           <!--class="nav-link">-->
-                          <!--<span class="title">岗位管理</span>-->
-
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/user-management/user-management-list.html"-->
-                           <!--class="nav-link">-->
-                          <!--<span class="title">用户管理</span>-->
-
-                        <!--</a>-->
-                      <!--</li>-->
-                    <!--</ul>-->
-                    <!--<div class="slimScrollBar"-->
-                         <!--style="background: rgb(51, 51, 51); width: 10px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; left: 1px;"></div>-->
-                    <!--<div class="slimScrollRail"-->
-                         <!--style="width: 10px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div>-->
-                  <!--</div>-->
-                <!--</li>-->
-                <!--<li class="nav-item">-->
-                  <!--<a href="javascript:;" class="nav-link nav-toggle">-->
-                    <!--<span class="title">菜单管理</span>-->
-                    <!--<img :src="arrowLeft">-->
-                  <!--</a>-->
-                  <!--<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">-->
-                    <!--<ul class=" sub-menu  three-menu" dir="rtl" style="overflow: hidden; width: auto; height: auto;">-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/menu-picture/menu-picture-list.html" class="nav-link">-->
-                          <!--<span class="title">菜单图标管理</span>-->
-
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/auth-management/auth-management2.html" class="nav-link">-->
-                          <!--<span class="title">权限管理</span>-->
-
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li class="nav-item">-->
-                        <!--<a href="http://172.16.0.99:32804/cu/menu-management/menu-management.html" class="nav-link">-->
-                          <!--<span class="title">菜单配置</span>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                    <!--</ul>-->
-                    <!--<div class="slimScrollBar"-->
-                         <!--style="background: rgb(51, 51, 51); width: 10px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; left: 1px;"></div>-->
-                    <!--<div class="slimScrollRail"-->
-                         <!--style="width: 10px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div>-->
-                  <!--</div>-->
-                <!--</li>-->
               </ul>
             </li>
 

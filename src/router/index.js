@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import generatingStandard from '@/page/standardManagement/generatingStandard.vue'
+import listDemoPage from '@/page/listDemo/listDemoPage.vue'
 
 Vue.use(Router)
 
@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       // name: 'Hello',
-      component: generatingStandard,
+      component: listDemoPage,
       meta: {title: '市场管理'}
     }
   ]
