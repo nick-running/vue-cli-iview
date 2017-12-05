@@ -3,11 +3,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import router from './router'
-// import '@pubCss/element-theme-green/index.css'
-// import 'element-ui/lib/index.js'
-// import Element from 'element-ui'
+import '@/assets/css/styles.css'
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+import '@/assets/ali-fonts/iconfont.css'
 
-// import BackLayout from './components/layouts/BackLayout.vue'
+Vue.use(MintUI)
 import index from './page/index.vue'
 
 Vue.use(Vuex)

@@ -7,7 +7,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '',
+    assetsPublicPath: './',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -30,25 +30,11 @@ module.exports = {
     proxyTable: {// 连接到后台服务的代理
       // proxy all requests starting with /api to jsonplaceholder
       '/api': {
-        target: 'http://172.16.0.108:9020', // ly
+        target: 'http://127.0.0.1:8899',
         // target: 'http://localhost:3000', // 连接到测试服务的代理
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
-        }
-      },
-      '/api_mock': {
-        target: 'http://127.0.0.1:8033',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api_mock': ''
-        }
-      },
-      '/api_qo': {
-        target: 'http://172.16.0.99:32801', // 官网前台测试
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api_qo': ''
         }
       }
       },

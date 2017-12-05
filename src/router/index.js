@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import listDemoPage from '@/page/listDemo/listDemoPage.vue'
+// import orderListSimple from '@/page/order/order_list_simple.vue'
+import demo from '@/page/test/demo.vue'
 
 Vue.use(Router)
 
@@ -10,7 +11,7 @@ export default new Router({
     {
       path: '/',
       // name: 'Hello',
-      component: listDemoPage,
+      component: demo,
       meta: {title: '订单管理'}
     }
   ]
