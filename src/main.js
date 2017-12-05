@@ -3,16 +3,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import router from './router'
-import '@pubCss/zjadmin.css'
-import '@pubCss/element-theme-green/index.css'
-import 'element-ui/lib/index.js'
-import Element from 'element-ui'
+// import '@pubCss/element-theme-green/index.css'
+// import 'element-ui/lib/index.js'
+// import Element from 'element-ui'
 
 // import BackLayout from './components/layouts/BackLayout.vue'
 import index from './page/index.vue'
 
 Vue.use(Vuex)
-Vue.use(Element)
+// Vue.use(Element)
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => { // beforeEach可以控制权限

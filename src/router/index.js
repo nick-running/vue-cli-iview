@@ -11,7 +11,7 @@ export default new Router({
       path: '/',
       // name: 'Hello',
       component: listDemoPage,
-      meta: {title: '市场管理'}
+      meta: {title: '订单管理'}
     }
   ]
 })
