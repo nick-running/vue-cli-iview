@@ -15,7 +15,7 @@
     },
     created () {
 //      let _this = this
-//      axios({
+//      this.$axios({
 //        method: 'post',
 //        url: '/api_cu/script/cu/availableMenus'
 ////        url: '/api/qz/api/findDictionaryList',

@@ -27,8 +27,7 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {// 连接到后台服务的代理
-      // proxy all requests starting with /api to jsonplaceholder
+    proxyTable: { // 连接到后台服务的代理
       '/api': {
         target: 'http://127.0.0.1:8899',
         // target: 'http://localhost:3000', // 连接到测试服务的代理

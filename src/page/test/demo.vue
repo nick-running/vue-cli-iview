@@ -4,17 +4,14 @@
       <mt-tabbar v-model="selected">
         <mt-tab-item id="orderList">
           <div class="iconfont icon-dingdan"></div>
-          <!--<img slot="icon" src="../assets/100x100.png">-->
           订单
         </mt-tab-item>
         <mt-tab-item id="orderFood">
           <div class="iconfont icon-diancan"></div>
-          <!--<img slot="icon" src="../assets/100x100.png">-->
           点餐
         </mt-tab-item>
         <mt-tab-item id="product">
           <div class="iconfont icon-chanpin"></div>
-          <!--<img slot="icon" src="../assets/100x100.png">-->
           产品
         </mt-tab-item>
       </mt-tabbar>

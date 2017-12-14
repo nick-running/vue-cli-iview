@@ -7,6 +7,36 @@ import '@/assets/css/styles.css'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import '@/assets/ali-fonts/iconfont.css'
+import store from './store'
+
+import axios from 'axios'
+let vueInstance
+axios.interceptors.request.use(function (config) {
+  if (config.url.indexOf('/api/')!==-1&&localStorage.getItem('token')) {
+    config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
+  }
+  config.timeout = 30000;
+  return config;
+}, function (err) {
+  console.log(err);
+  return Promise.reject(err);
+});
+// 响应拦截器
+axios.interceptors.response.use(function (response) {
+  if(response.data.errno==401) {
+    Vue.$messagebox.confirm('没有登录，是否前去登录？').then(action => {
+      vueInstance.$router.push('/login')
+    });
+  }
+  return response;
+}, function (error) {
+  // vueInstance.$notify({group: 'warn', text: '数据未能正常访问'})
+  vueInstance.$messagebox('提示', '数据未能正常访问');
+  vueInstance.$indicator.close();
+  console.log(error);
+  return Promise.reject(error);
+});
+Vue.prototype.$axios = axios
 
 Vue.use(MintUI)
 import index from './page/index.vue'
@@ -35,8 +65,9 @@ router.beforeEach((to, from, next) => { // beforeEach可以控制权限
   // }
 })
 /* eslint-disable no-new */
-new Vue({
+vueInstance = new Vue({
   el: '#app',
+  store,
   router,
   template: '<index/>',
   components: { index }
