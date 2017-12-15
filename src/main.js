@@ -4,8 +4,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import router from './router'
 import '@/assets/css/styles.css'
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
+import iview from 'iview'
+import 'iview/dist/styles/iview.css';
 import '@/assets/ali-fonts/iconfont.css'
 import store from './store'
 
@@ -24,21 +24,25 @@ axios.interceptors.request.use(function (config) {
 // 响应拦截器
 axios.interceptors.response.use(function (response) {
   if(response.data.errno==401) {
-    Vue.$messagebox.confirm('没有登录，是否前去登录？').then(action => {
-      vueInstance.$router.push('/login')
-    });
+    // Vue.$messagebox.confirm('没有登录，是否前去登录？').then(action => {
+    //   vueInstance.$router.push('/login')
+    // });
   }
   return response;
 }, function (error) {
+  vueInstance.$Notice.error({
+    title: '无法访问',
+    desc: '数据未能正常访问！'
+  });
   // vueInstance.$notify({group: 'warn', text: '数据未能正常访问'})
-  vueInstance.$messagebox('提示', '数据未能正常访问');
-  vueInstance.$indicator.close();
+  // vueInstance.$messagebox('提示', '数据未能正常访问');
+  // vueInstance.$indicator.close();
   console.log(error);
   return Promise.reject(error);
 });
 Vue.prototype.$axios = axios
 
-Vue.use(MintUI)
+Vue.use(iview)
 import index from './page/index.vue'
 
 Vue.use(Vuex)
