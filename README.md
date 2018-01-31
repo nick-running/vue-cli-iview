@@ -1,6 +1,6 @@
 # zj-prj
 
-> 项目模板
+> 基于vue-cli+webpack+iview的项目模板
 
 ## Build Setup
 
